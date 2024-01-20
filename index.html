@@ -15,35 +15,35 @@
         <div class="field">
             <label class="label">Nombre de estudiante</label>
             <div class="control">
-                <input class="input" type="text" placeholder="Nombre y apellido" name="Nombre" />
+                <input class="input" type="text" placeholder="Nombre y apellido" name="Nombre" required />
             </div>
         </div>
 
         <div class="field">
             <label class="label">Email</label>
             <div class="control">
-                <input class="input" type="email" placeholder="Tu correo" name="Email" />
+                <input class="input" type="email" placeholder="Tu correo" name="Email" required />
             </div>
         </div>
 
         <div class="field">
             <label class="label">Fecha de nacimiento</label>
             <div class="control">
-                <input class="input" type="date" name="Fecha" />
+                <input class="input" type="date" name="Fecha" required />
             </div>
         </div>
 
         <div class="field">
             <label class="label">Código</label>
             <div class="control">
-                <input class="input" type="text" placeholder="Tu código" name="Codigo" />
+                <input class="input" type="text" placeholder="Tu código" name="Codigo" required />
             </div>
         </div>
 
         <div class="field">
             <label class="label">Género</label>
             <div class="control">
-                <label class="radio"><input type="radio" name="Genero" value="Masculino" /> Masculino</label>
+                <label class="radio"><input type="radio" name="Genero" value="Masculino" required /> Masculino</label>
                 <label class="radio"><input type="radio" name="Genero" value="Femenino" /> Femenino</label>
             </div>
         </div>
@@ -51,17 +51,17 @@
         <div class="field">
             <label class="label">Información adicional</label>
             <div class="control">
-                <textarea class="textarea" placeholder="Cualquier información adicional" name="Notas"></textarea>
+                <textarea class="textarea" placeholder="Cualquier información adicional" name="Notas" required></textarea>
             </div>
         </div>
 
         <div class="field">
             <label class="label">Acepta los términos</label>
             <div class="control">
-                <label class="checkbox"><input type="checkbox" name="Acepta" value="yes" /> De acuerdo con los términos y condiciones</label>
+                <label class="checkbox"><input type="checkbox" name="Acepta" value="yes" required /> De acuerdo con los términos y condiciones</label>
             </div>
         </div>
-
+  
         <div class="field is-grouped">
             <div class="control">
                 <button class="button is-primary" type="submit" id="submit-button">Enviar</button>
@@ -72,6 +72,7 @@
         </div>
     </form>
     <div id="message" style="display: none; margin: 20px; font-weight: bold; color: green; padding: 8px; background-color: beige; border-radius: 4px; border-color: aquamarine;"></div>
+
 
     <script>
         document.getElementById("form").addEventListener("submit", function (e) {
