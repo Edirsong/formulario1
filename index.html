@@ -27,16 +27,16 @@
         </div>
 
         <div class="field">
-            <label class="label">Contraseña</label>
+            <label class="label">Fecha de nacimiento</label>
             <div class="control">
-                <input class="input" type="password" placeholder="Tu contraseña" name="Contraseña" />
+                <input class="input" type="date" name="Fecha" />
             </div>
         </div>
 
         <div class="field">
-            <label class="label">Fecha de nacimiento</label>
+            <label class="label">Código</label>
             <div class="control">
-                <input class="input" type="date" name="Fecha" />
+                <input class="input" type="text" placeholder="Tu código" name="Codigo" />
             </div>
         </div>
 
@@ -49,16 +49,16 @@
         </div>
 
         <div class="field">
-            <label class="label">Acepta los términos</label>
+            <label class="label">Información adicional</label>
             <div class="control">
-                <label class="checkbox"><input type="checkbox" name="Acepta terminos" value="yes" /> De acuerdo con los términos y condiciones</label>
+                <textarea class="textarea" placeholder="Cualquier información adicional" name="Notas"></textarea>
             </div>
         </div>
 
         <div class="field">
-            <label class="label">Información adicional</label>
+            <label class="label">Acepta los términos</label>
             <div class="control">
-                <textarea class="textarea" placeholder="Cualquier información adicional" name="Notas"></textarea>
+                <label class="checkbox"><input type="checkbox" name="Acepta" value="yes" /> De acuerdo con los términos y condiciones</label>
             </div>
         </div>
 
@@ -88,7 +88,7 @@
 
             var formDataString = keyValuePairs.join("&");
 
-            fetch("https://script.google.com/macros/s/AKfycbxSmF5nI8yplBZy08YPMihCTKktOWpI-egLvw8fHnfgzcfHLP9ZgIUYadhrgbUrAXVnmQ/exec", {
+            fetch("https://script.google.com/macros/s/AKfycbxoUaRlXrffh2TNM19SzKvQGklkdJPq4Zjw2VAFgKhaX9cRlBGIxCyoCJlIzfxRGuYEUw/exec", {
                 method: "POST",
                 body: formDataString,
                 headers: {
